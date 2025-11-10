@@ -159,3 +159,8 @@ Esses tópicos podem ser consumidos por um painel web, mobile ou dashboard corpo
 
 ---
 
+Link para o projeto no Wokwi
+
+# https://wokwi.com/projects/447277200034985985
+
+---
