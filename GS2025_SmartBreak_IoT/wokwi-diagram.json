@@ -3,125 +3,41 @@
   "author": "GS2025 SmartBreak IoT",
   "editor": "wokwi",
   "parts": [
-    {
-      "type": "wokwi-esp32-devkit-v1",
-      "id": "esp32",
-      "top": 0,
-      "left": 0,
-      "attrs": {}
-    },
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp32", "top": 0, "left": 0, "attrs": {} },
     {
       "type": "wokwi-dht22",
       "id": "dht1",
-      "top": -120,
-      "left": 40,
-      "attrs": {}
+      "top": -172.5,
+      "left": 23.4,
+      "attrs": { "temperature": "27.4", "humidity": "92.5" }
     },
-    {
-      "type": "wokwi-photoresistor",
-      "id": "ldr1",
-      "top": -120,
-      "left": -80,
-      "attrs": {}
-    },
-    {
-      "type": "wokwi-led",
-      "id": "led1",
-      "top": 40,
-      "left": 120,
-      "attrs": {
-        "color": "red"
-      }
-    },
+    { "type": "wokwi-photoresistor", "id": "ldr1", "top": -120, "left": -80, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": 6, "left": 147.8, "attrs": { "color": "red" } },
     {
       "type": "wokwi-pushbutton",
       "id": "btn1",
-      "top": 40,
-      "left": -80,
-      "attrs": {
-        "color": "green"
-      }
+      "top": -3.4,
+      "left": -96,
+      "attrs": { "color": "blue" }
     },
-    {
-      "type": "wokwi-buzzer",
-      "id": "buzz1",
-      "top": 40,
-      "left": 180,
-      "attrs": {}
-    }
+    { "type": "wokwi-buzzer", "id": "buzz1", "top": 21.6, "left": 193.8, "attrs": {} }
   ],
   "connections": [
-    [
-      "dht1:VCC",
-      "esp32:3V3",
-      "red",
-      []
-    ],
-    [
-      "dht1:GND",
-      "esp32:GND.1",
-      "black",
-      []
-    ],
-    [
-      "dht1:DATA",
-      "esp32:D15",
-      "green",
-      []
-    ],
-    [
-      "ldr1:VCC",
-      "esp32:3V3",
-      "red",
-      []
-    ],
-    [
-      "ldr1:GND",
-      "esp32:GND.2",
-      "black",
-      []
-    ],
-    [
-      "ldr1:SIG",
-      "esp32:34",
-      "green",
-      []
-    ],
-    [
-      "led1:A",
-      "esp32:D2",
-      "green",
-      []
-    ],
-    [
-      "led1:C",
-      "esp32:GND.2",
-      "black",
-      []
-    ],
-    [
-      "btn1:1.l",
-      "esp32:5",
-      "green",
-      []
-    ],
-    [
-      "btn1:2.l",
-      "esp32:GND.1",
-      "black",
-      []
-    ],
-    [
-      "buzz1:1",
-      "esp32:4",
-      "green",
-      []
-    ],
-    [
-      "buzz1:2",
-      "esp32:GND.2",
-      "black",
-      []
-    ]
-  ]
+    [ "dht1:DATA", "esp32:D15", "green", [] ],
+    [ "ldr1:VCC", "esp32:3V3", "red", [] ],
+    [ "ldr1:GND", "esp32:GND.2", "black", [] ],
+    [ "ldr1:SIG", "esp32:34", "green", [] ],
+    [ "led1:C", "esp32:GND.2", "black", [] ],
+    [ "btn1:1.l", "esp32:5", "green", [] ],
+    [ "buzz1:1", "esp32:4", "green", [] ],
+    [ "dht1:SDA", "esp32:D15", "cyan", [ "v0" ] ],
+    [ "dht1:VCC", "esp32:3V3", "red", [ "v0" ] ],
+    [ "dht1:GND", "esp32:GND.1", "black", [ "v0" ] ],
+    [ "btn1:1.r", "esp32:GND.2", "black", [ "v0" ] ],
+    [ "btn1:2.r", "esp32:D5", "#8f4814", [ "h0" ] ],
+    [ "buzz1:2", "esp32:D4", "red", [ "v0" ] ],
+    [ "buzz1:1", "esp32:GND.1", "black", [ "v0" ] ],
+    [ "led1:A", "esp32:D19", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
 }
