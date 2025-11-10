@@ -158,3 +158,9 @@ Esses tópicos podem ser consumidos por um painel web, mobile ou dashboard corpo
 - Manter o mesmo código-fonte, apenas ajustando o tempo real de pausa (50 minutos) e, se desejado, trocar o broker MQTT.
 
 ---
+
+Link para o projeto no Wokwi
+
+# https://wokwi.com/projects/447277200034985985
+
+---
