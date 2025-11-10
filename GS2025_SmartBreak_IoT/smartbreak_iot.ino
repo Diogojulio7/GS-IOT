@@ -9,7 +9,6 @@
   - LED e buzzer avisam quando condições não estão ideais ou há muito tempo sem pausa
   - Envio periódico dos dados via MQTT em formato JSON
 
-  Autor(es): (preencha com os nomes do grupo)
 */
 
 #include <WiFi.h>
