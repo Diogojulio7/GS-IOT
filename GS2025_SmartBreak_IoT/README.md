@@ -174,14 +174,3 @@ Sugestão de estrutura:
 
 ---
 
-## 11. Checklist para Entrega
-
-- [x] Problema e solução descritos no README.
-- [x] Uso de ESP32 + sensores + atuadores.
-- [x] Comunicação via MQTT documentada (tópicos e JSON).
-- [x] Código-fonte comentado (`smartbreak_iot.ino`).
-- [x] Arquivo de circuito para o Wokwi (`wokwi-diagram.json`).
-- [x] Projeto público no Wokwi com link no README.
-- [x] Roteiro pronto para vídeo de até 3 minutos.
-
-Ajuste os créditos com os nomes do grupo e personalize detalhes, se necessário.
