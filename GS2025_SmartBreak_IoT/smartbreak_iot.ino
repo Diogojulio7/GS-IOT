@@ -20,7 +20,7 @@
 #define DHTPIN 15
 #define DHTTYPE DHT22
 #define LDRPIN 34
-#define LEDPIN 2
+#define LEDPIN 19
 #define BUZZERPIN 4
 #define BREAK_BUTTON_PIN 5
 
