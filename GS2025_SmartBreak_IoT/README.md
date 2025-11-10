@@ -1,4 +1,7 @@
 # GS 2025 – SmartBreak IoT
+
+Diogo Julio Oliveira - RM553837
+
 **Estação de Bem-Estar e Produtividade para o Futuro do Trabalho**
 
 ## 1. Visão Geral
@@ -147,26 +150,8 @@ Esses tópicos podem ser consumidos por um painel web, mobile ou dashboard corpo
 
 ---
 
-## 9. Como Gravar o Vídeo Explicativo (Roteiro Sugerido)
 
-**Duração máxima:** até 3 minutos.
-
-Sugestão de estrutura:
-1. **(30s)** Apresentar o problema: home office, ergonomia, falta de pausas, impacto na saúde e produtividade.
-2. **(40s)** Explicar a solução SmartBreak IoT e mostrar o circuito no Wokwi.
-3. **(40s)** Demonstrar:
-   - sensores variando;
-   - LED/buzzer acionando quando as condições ficam ruins;
-   - prints do Serial ou cliente MQTT mostrando as mensagens JSON.
-4. **(40s)** Relacionar com o futuro do trabalho:
-   - possibilidade de dashboards de bem-estar;
-   - apoio a RH/gestores;
-   - cultura de saúde e prevenção.
-5. **(30s)** Conclusão: reforçar benefícios, possibilidades de expansão (integração com app, gamificação de pausas, etc.).
-
----
-
-## 10. Como Adaptar para Protótipo Físico
+## 9. Como Adaptar para Protótipo Físico
 
 - Utilizar os mesmos componentes da simulação.
 - Configurar a rede Wi-Fi real da FIAP (ou hotspot) nas constantes `ssid` e `password`.
