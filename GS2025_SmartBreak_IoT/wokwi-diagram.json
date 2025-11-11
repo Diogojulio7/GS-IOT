@@ -1,43 +1,44 @@
 {
   "version": 1,
-  "author": "GS2025 SmartBreak IoT",
+  "author": "Diogo Julio",
   "editor": "wokwi",
   "parts": [
-    { "type": "wokwi-esp32-devkit-v1", "id": "esp32", "top": 0, "left": 0, "attrs": {} },
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -182.1, "left": 23.4, "attrs": {} },
     {
-      "type": "wokwi-dht22",
-      "id": "dht1",
-      "top": -172.5,
-      "left": 23.4,
-      "attrs": { "temperature": "27.4", "humidity": "92.5" }
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -32.4,
+      "left": 138.2,
+      "attrs": { "color": "red" }
     },
-    { "type": "wokwi-photoresistor", "id": "ldr1", "top": -120, "left": -80, "attrs": {} },
-    { "type": "wokwi-led", "id": "led1", "top": 6, "left": 147.8, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -84,
+      "left": 184.2,
+      "attrs": { "volume": "0.1" }
+    },
     {
       "type": "wokwi-pushbutton",
       "id": "btn1",
-      "top": -3.4,
-      "left": -96,
-      "attrs": { "color": "blue" }
-    },
-    { "type": "wokwi-buzzer", "id": "buzz1", "top": 21.6, "left": 193.8, "attrs": {} }
+      "top": 54.2,
+      "left": -115.2,
+      "attrs": { "color": "green", "xray": "1" }
+    }
   ],
   "connections": [
-    [ "dht1:DATA", "esp32:D15", "green", [] ],
-    [ "ldr1:VCC", "esp32:3V3", "red", [] ],
-    [ "ldr1:GND", "esp32:GND.2", "black", [] ],
-    [ "ldr1:SIG", "esp32:34", "green", [] ],
-    [ "led1:C", "esp32:GND.2", "black", [] ],
-    [ "btn1:1.l", "esp32:5", "green", [] ],
-    [ "buzz1:1", "esp32:4", "green", [] ],
-    [ "dht1:SDA", "esp32:D15", "cyan", [ "v0" ] ],
-    [ "dht1:VCC", "esp32:3V3", "red", [ "v0" ] ],
-    [ "dht1:GND", "esp32:GND.1", "black", [ "v0" ] ],
-    [ "btn1:1.r", "esp32:GND.2", "black", [ "v0" ] ],
-    [ "btn1:2.r", "esp32:D5", "#8f4814", [ "h0" ] ],
-    [ "buzz1:2", "esp32:D4", "red", [ "v0" ] ],
-    [ "buzz1:1", "esp32:GND.1", "black", [ "v0" ] ],
-    [ "led1:A", "esp32:D19", "green", [ "v0" ] ]
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "dht1:SDA", "esp:15", "#8f4814", [ "v0" ] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "dht1:GND", "esp:GND.2", "black", [ "v0" ] ],
+    [ "led1:A", "esp:19", "blue", [ "v0" ] ],
+    [ "led1:C", "esp:GND.2", "black", [ "v0" ] ],
+    [ "bz1:2", "esp:4", "magenta", [ "v0" ] ],
+    [ "bz1:1", "esp:GND.2", "black", [ "v0" ] ],
+    [ "btn1:1.r", "esp:GND.2", "black", [ "v0" ] ],
+    [ "btn1:2.r", "esp:5", "green", [ "h0" ] ]
   ],
   "dependencies": {}
 }
