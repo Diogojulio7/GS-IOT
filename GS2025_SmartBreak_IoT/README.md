@@ -1,6 +1,7 @@
 # GS 2025 – SmartBreak IoT
 
 Diogo Julio Oliveira - RM553837
+Jonata Rafael - RM552939
 
 **Estação de Bem-Estar e Produtividade para o Futuro do Trabalho**
 
