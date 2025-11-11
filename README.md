@@ -164,3 +164,9 @@ Link para o projeto no Wokwi
 # https://wokwi.com/projects/447285308681877505
 
 ---
+
+Link do video
+
+# https://drive.google.com/file/d/1Qy7lYyb7Xejw329RjkIvHPQaiDnlKHdv/view?usp=sharing
+
+---
